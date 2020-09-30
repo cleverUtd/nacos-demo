@@ -1,0 +1,5 @@
+rootProject.name = 'nacos-sample'
+include 'dubbo-provider'
+include 'dubbo-consumer'
+include 'dubbo-api'
+

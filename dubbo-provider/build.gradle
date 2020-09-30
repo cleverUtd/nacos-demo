@@ -1,0 +1,14 @@
+apply from: '../libraries.gradle'
+
+dependencies {
+   compile libraries.dubbo
+   compile libraries.nacos_client
+   compile libraries.logback_classic
+   compile libraries.logback_core
+   compile libraries.logback_ext_spring
+   compile libraries.slf4j
+   compile libraries.jcl_over_slf4j
+
+   compile project(":dubbo-api")
+
+}
