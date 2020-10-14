@@ -12,4 +12,9 @@ allprojects {
     }
 }
 
+apply from: 'libraries.gradle'
+dependencies {
+    compile libraries.nacos_client
+}
+
 

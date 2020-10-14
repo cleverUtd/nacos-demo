@@ -1,5 +1,4 @@
 apply from: '../libraries.gradle'
-
 dependencies {
     compile libraries.dubbo
     compile libraries.nacos_client
