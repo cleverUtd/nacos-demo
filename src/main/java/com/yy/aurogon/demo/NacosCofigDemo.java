@@ -23,7 +23,12 @@ public class NacosCofigDemo {
 
         ConfigService config = NacosFactory.createConfigService(properties);
 
-        config.addListener("membership", "test", new Listener() {
+        // 获取配置
+        String content = config.getConfig("test", "member-aggregation", 5000);
+        System.out.println(content);
+
+        // 注册监听器
+        config.addListener("test", "member-aggregation", new Listener() {
             @Override
             public Executor getExecutor() {
                 return null;

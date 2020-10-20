@@ -25,7 +25,7 @@ public class NacosNamingDemo {
 
         final NamingService naming = NamingFactory.createNamingService(properties);
 
-        naming.registerInstance("memberLevelService",  "127.0.0.1", 8888,  "sg_aws");
+        naming.registerInstance("memberLevelService",  "127.0.0.1", 8888,  "sg-aws");
         naming.registerInstance("memberLevelService",  "127.0.0.1", 8889);
 
         naming.subscribe("memberLevelService", event -> {
